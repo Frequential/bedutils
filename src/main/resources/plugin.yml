@@ -1,0 +1,4 @@
+name: BedUtils
+version: ${project.version}
+main: me.jasperedits.bedutils.BedUtilsPlugin
+api-version: 1.13
