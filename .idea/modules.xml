@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Documents/Escritorio/IntelliJ/BedUtils/BedUtils/BedUtils.iml" filepath="$USER_HOME$/Documents/Escritorio/IntelliJ/BedUtils/BedUtils/BedUtils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BedUtils.iml" filepath="$PROJECT_DIR$/BedUtils.iml" />
     </modules>
   </component>
 </project>

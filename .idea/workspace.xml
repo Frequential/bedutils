@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="06958904-79c4-4848-ba5a-65cee6f4e2fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jasperedits/bedutils/listeners/BedListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jasperedits/bedutils/listeners/BedListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jasperedits/bedutils/utilities/StringUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jasperedits/bedutils/utilities/StringUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-    </list>
+    <list default="true" id="40ab165c-4fb8-4c75-8504-c0426c7a0e50" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,41 +17,34 @@
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="downloadDocsAutomatically" value="true" />
         <option name="downloadSourcesAutomatically" value="true" />
-        <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1ZwNZrzHNbbOt79UzYM78RMdVTT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1lqHMpE158o4aI7Sc5cmykRJKjI" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="me.jasperedits.survivalcore" />
-    </key>
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RunManager">
-    <configuration name="Build" type="MavenRunConfiguration" factoryName="Maven">
+    <configuration name="BedUtils build" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -66,7 +56,7 @@
             <option name="goals">
               <list>
                 <option value="clean" />
-                <option value="install" />
+                <option value="package" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -81,67 +71,21 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="06958904-79c4-4848-ba5a-65cee6f4e2fd" name="Default Changelist" comment="" />
-      <created>1585746254214</created>
+      <changelist id="40ab165c-4fb8-4c75-8504-c0426c7a0e50" name="Default Changelist" comment="" />
+      <created>1608317656036</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1585746254214</updated>
+      <updated>1608317656036</updated>
+      <workItem from="1608317658157" duration="3434000" />
+      <workItem from="1608321107917" duration="21840000" />
+      <workItem from="1608381924621" duration="15024000" />
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="552" y="213" key="#Project_Structure" timestamp="1585834359538">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="552" y="213" key="#Project_Structure/0.30.1920.1050@0.30.1920.1050" timestamp="1585834359538" />
-    <state x="414" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585751872847">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="414" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1585751872847" />
-    <state x="803" y="444" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1585835024138">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="803" y="444" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1585835024138" />
-    <state x="740" y="310" key="FileChooserDialogImpl" timestamp="1585834989624">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="740" y="310" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1585834989624" />
-    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1585833964118">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.30.1920.1050@0.30.1920.1050" timestamp="1585833964118" />
-    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1585833964118">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.center/0.30.1920.1050@0.30.1920.1050" timestamp="1585833964118" />
-    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1585833964118">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.left/0.30.1920.1050@0.30.1920.1050" timestamp="1585833964118" />
-    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1585833964118">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state width="1877" height="264" key="GridCell.Tab.0.right/0.30.1920.1050@0.30.1920.1050" timestamp="1585833964118" />
-    <state x="540" y="290" key="IDE.errors.dialog" timestamp="1585750124371">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="540" y="290" key="IDE.errors.dialog/0.30.1920.1050@0.30.1920.1050" timestamp="1585750124371" />
-    <state x="461" y="197" key="SettingsEditor" timestamp="1585835057230">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="461" y="197" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1585835057230" />
-    <state x="364" y="288" key="new project wizard" timestamp="1585834984110">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="364" y="288" key="new project wizard/0.30.1920.1050@0.30.1920.1050" timestamp="1585834984110" />
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1585772367697">
-      <screen x="0" y="30" width="1920" height="1050" />
-    </state>
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1585772367697" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
