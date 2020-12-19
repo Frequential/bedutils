@@ -1,5 +1,5 @@
 name: BedUtils
-version: 1.0
+version: 2.0.1_FIXED
 main: me.jasperedits.bedutils.BedUtilsPlugin
 api-version: 1.16
 authors: [ JasperEdits ]

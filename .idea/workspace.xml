@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40ab165c-4fb8-4c75-8504-c0426c7a0e50" name="Default Changelist" comment="" />
+    <list default="true" id="40ab165c-4fb8-4c75-8504-c0426c7a0e50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/jasperedits/bedutils/listeners/BedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jasperedits/bedutils/listeners/BedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/bedutils-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-bedutils-1.0.jar" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +23,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -26,6 +35,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1lqHMpE158o4aI7Sc5cmykRJKjI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -82,6 +92,7 @@
       <workItem from="1608317658157" duration="3434000" />
       <workItem from="1608321107917" duration="21840000" />
       <workItem from="1608381924621" duration="15024000" />
+      <workItem from="1608402268809" duration="2381000" />
     </task>
     <servers />
   </component>

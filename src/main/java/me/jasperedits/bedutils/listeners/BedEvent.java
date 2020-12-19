@@ -62,13 +62,16 @@ public class BedEvent implements Listener {
 
         // How many players are sleeping?
         int sleepingPlayers = 0;
-        for (Player onlinePlayers : Bukkit.getOnlinePlayers()) {
-            if (player.isSleeping() || event.getPlayer() == player) {
+        for (Player onlinePlayer : Bukkit.getOnlinePlayers()) {
+            if (onlinePlayer.isSleeping() || event.getPlayer() == onlinePlayer) {
                 sleepingPlayers++;
             }
         }
 
-        int sleepingPlayersPercentage = sleepingPlayers / Bukkit.getOnlinePlayers().size() * 100;
+        int sleepingPlayersPercentage = Math.round((float) sleepingPlayers / (float) Bukkit.getOnlinePlayers().size() * 100);
+
+        player.sendMessage(sleepingPlayers + " de " + Bukkit.getOnlinePlayers().size() + " = " + sleepingPlayersPercentage);
+
         if (sleepingPlayersPercentage >= preferences.getFileConfiguration().getInt("preferences.betterBeds.percentageNeeded")) {
             world.setTime(0);
             world.setThundering(false);
