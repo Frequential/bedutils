@@ -1,0 +1,16 @@
+# _______ _______ _______ _______ _______  ______ _______ _______
+# |  |  | |______ |______ |______ |_____| |  ____ |______ |______
+# |  |  | |______ ______| ______| |     | |_____| |______ ______|
+
+betterBeds: # Leave empty to disable.
+  failureFarAway: "The bed is too far away."
+  failureWrongTime: "You can sleep only at night or during thunderstorms."
+  alone: "You are alone on the server, sleeping won't be modified."
+  dayPassed: "The world sees yet another day."
+  moreNeeded: "We need more players! %sleeping% out of %online% are sleeping. (%sleepingPercentage%% / %percentageNeeded%%)"
+
+bedCommand:
+  sleepingNotPossible: "You can't sleep now."
+  sleepingPossible: "You can sleep now."
+  arguments: "Not enough or wrong arguments."
+  reload: "Plugin's configuration has been reloaded."

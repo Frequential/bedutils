@@ -1,16 +1,21 @@
-###########################
-# BedUtils by JasperEdits #
-###########################
+# _______  _____  __   _ _______ _____  ______
+# |       |     | | \  | |______   |   |  ____
+# |_____  |_____| |  \_| |       __|__ |_____|
+
+debug: false
 
 modules:
-  betterSleep:
-    enabled: true
-    playerPercentage: 25 # Percentage of people needed to get to the next day.
-    messages: # Set to "0" to disable message.
-      lonelyPlayer: "&8[&aInfo&8] &aYou are alone, sleeping won't be modified."
-      moreNeeded: "&8[&aInfo&8] &e%sleeping% &aof &e%connected% &asleeping. &8(%sleepingPercent%, &e%percentNeeded% needed&8)"
-      success: "&8[&aInfo&8] &aDay passed."
-      youCantSleepNow: "&8[&cError&8] &cYou can't sleep yet"
+  betterBeds: true
 
-enableMessage: "&aBedUtils enabled."
-disableMessage: "&cBedUtils disabled."
+preferences:
+  betterBeds:
+    # If there's only one player, the server will also instantly go to the next day. If false, beds will be vanilla style.
+    changeIfAlone: true
+    # The percentage of players needed to pass the day.
+    percentageNeeded: 25
+    # Changes the maximum value to enter a bed, if longer than 3 (for X and Z) and 2 (for Y), Minecraft will limit your enter automatically.
+    maximumXZDistanceToSleep: 3
+    maximumYDistanceToSleep: 2
+
+permissions:
+  reload: bu.reload

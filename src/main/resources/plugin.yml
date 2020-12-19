@@ -1,4 +1,10 @@
 name: BedUtils
 version: ${project.version}
 main: me.jasperedits.bedutils.BedUtilsPlugin
-api-version: 1.13
+api-version: 1.16
+authors: [ JasperEdits ]
+description: A simple plugin that modifies beds for multiplayer purposes.
+
+commands:
+  bed:
+    aliases: [cama, dormir]

@@ -1,3 +1,7 @@
-me\jasperedits\bedutils\BedUtilsPlugin.class
-me\jasperedits\bedutils\listeners\BedListener.class
-me\jasperedits\bedutils\utilities\StringUtilities.class
+me/jasperedits/bedutils/utils/StringUtils.class
+me/jasperedits/bedutils/utils/config/ConfigManager.class
+me/jasperedits/bedutils/BedUtilsPlugin.class
+me/jasperedits/bedutils/listeners/BedEvent.class
+me/jasperedits/bedutils/commands/BedCommand.class
+me/jasperedits/bedutils/utils/config/Config.class
+me/jasperedits/bedutils/utils/MathUtils.class
