@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="40ab165c-4fb8-4c75-8504-c0426c7a0e50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/jasperedits/bedutils/listeners/BedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jasperedits/bedutils/listeners/BedEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/jasperedits/bedutils/utils/MathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/jasperedits/bedutils/utils/MathUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +90,7 @@
       <workItem from="1608317658157" duration="3434000" />
       <workItem from="1608321107917" duration="21840000" />
       <workItem from="1608381924621" duration="15024000" />
-      <workItem from="1608402268809" duration="9411000" />
+      <workItem from="1608402268809" duration="10069000" />
     </task>
     <servers />
   </component>

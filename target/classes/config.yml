@@ -13,9 +13,12 @@ preferences:
     changeIfAlone: true
     # The percentage of players needed to pass the day.
     percentageNeeded: 25
-    # Changes the maximum value to enter a bed, if longer than 3 (for X and Z) and 2 (for Y), Minecraft will limit your enter automatically.
+    # Changes the maximum value to enter a bed, if longer than 3 (for X and Z) and 2 (for Y), Minecraft will limit your enter automatically. Don't change to leave it vanilla.
     maximumXZDistanceToSleep: 3
     maximumYDistanceToSleep: 2
+    # Changes when can you sleep, don't change to leave it vanilla.
+    startingTicksToSleep: 12541
+    endingTicksToSleep: 23458
 
 permissions:
   reload: bu.reload

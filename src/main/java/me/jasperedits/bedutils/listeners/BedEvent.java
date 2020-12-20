@@ -3,9 +3,9 @@ package me.jasperedits.bedutils.listeners;
 import me.jasperedits.bedutils.BedUtilsPlugin;
 import me.jasperedits.bedutils.utils.MathUtils;
 import me.jasperedits.bedutils.utils.StringUtils;
-import me.jasperedits.bedutils.utils.config.Config;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -15,8 +15,8 @@ public class BedEvent implements Listener {
 
     @EventHandler
     public void onBedEnter(PlayerBedEnterEvent event) {
-        Config messages = BedUtilsPlugin.getInstance().getConfigManager().getConfigs().get("messages");
-        Config preferences = BedUtilsPlugin.getInstance().getConfigManager().getConfigs().get("config");
+        FileConfiguration messages = BedUtilsPlugin.getInstance().getConfigManager().getConfigs().get("messages").getFileConfiguration();
+        FileConfiguration preferences = BedUtilsPlugin.getInstance().getConfigManager().getConfigs().get("config").getFileConfiguration();
 
         Player player = event.getPlayer();
         World world = player.getWorld();
@@ -29,17 +29,17 @@ public class BedEvent implements Listener {
 
         // Checks if you are too far away.
         if (!MathUtils.isBedReachable(player, event.getBed())) {
-            if (!messages.getFileConfiguration().getString("betterBeds.failureFarAway").isEmpty()) {
-                player.sendMessage(StringUtils.coloredMessage(messages.getFileConfiguration().getString("betterBeds.failureFarAway")));
+            if (!messages.getString("betterBeds.failureFarAway").isEmpty()) {
+                player.sendMessage(StringUtils.coloredMessage(messages.getString("betterBeds.failureFarAway")));
             }
             event.setCancelled(true);
             return;
         }
 
         // Checks if if's the right time or is thundering.
-        if (!((world.getTime() > 12541 && world.getTime() < 23458) || world.isThundering())) {
-            if (!messages.getFileConfiguration().getString("betterBeds.failureWrongTime").isEmpty()) {
-                player.sendMessage(StringUtils.coloredMessage(messages.getFileConfiguration().getString("betterBeds.failureWrongTime")));
+        if (!((world.getTime() > preferences.getInt("preferences.betterBeds.startingTicksToSleep") && world.getTime() < preferences.getInt("preferences.betterBeds.endingTicksToSleep")) || world.isThundering())) {
+            if (!messages.getString("betterBeds.failureWrongTime").isEmpty()) {
+                player.sendMessage(StringUtils.coloredMessage(messages.getString("betterBeds.failureWrongTime")));
             }
             event.setCancelled(true);
             return;
@@ -47,14 +47,14 @@ public class BedEvent implements Listener {
 
         // Checks if there's only one player online.
         if (Bukkit.getOnlinePlayers().size() == 1) {
-            if (preferences.getFileConfiguration().getBoolean("preferences.betterBeds.changeIfAlone")) {
+            if (preferences.getBoolean("preferences.betterBeds.changeIfAlone")) {
                 world.setTime(0);
                 world.setThundering(false);
-                Bukkit.broadcastMessage(StringUtils.coloredMessage(messages.getFileConfiguration().getString("betterBeds.dayPassed")));
+                Bukkit.broadcastMessage(StringUtils.coloredMessage(messages.getString("betterBeds.dayPassed")));
                 return;
             }
-            if (!messages.getFileConfiguration().getString("betterBeds.alone").isEmpty()) {
-                Bukkit.broadcastMessage(StringUtils.coloredMessage(messages.getFileConfiguration().getString("betterBeds.alone")));
+            if (!messages.getString("betterBeds.alone").isEmpty()) {
+                Bukkit.broadcastMessage(StringUtils.coloredMessage(messages.getString("betterBeds.alone")));
                 return;
             }
             return;
@@ -70,18 +70,19 @@ public class BedEvent implements Listener {
 
         int sleepingPlayersPercentage = Math.round((float) sleepingPlayers / (float) Bukkit.getOnlinePlayers().size() * 100);
 
-        if (sleepingPlayersPercentage >= preferences.getFileConfiguration().getInt("preferences.betterBeds.percentageNeeded")) {
+        if (sleepingPlayersPercentage >= preferences.getInt("preferences.betterBeds.percentageNeeded")) {
             world.setTime(0);
             world.setThundering(false);
-            if (!messages.getFileConfiguration().getString("betterBeds.dayPassed").isEmpty())
-                Bukkit.broadcastMessage(StringUtils.coloredMessage(messages.getFileConfiguration().getString("betterBeds.dayPassed")));
+            if (!messages.getString("betterBeds.dayPassed").isEmpty())
+                Bukkit.broadcastMessage(StringUtils.coloredMessage(messages.getString("betterBeds.dayPassed")));
         } else {
-            if (!messages.getFileConfiguration().getString("betterBeds.moreNeeded").isEmpty()) {
-                Bukkit.broadcastMessage(StringUtils.coloredMessage(messages.getFileConfiguration().getString("betterBeds.moreNeeded")
+            if (!messages.getString("betterBeds.moreNeeded").isEmpty()) {
+                Bukkit.broadcastMessage(StringUtils.coloredMessage(messages.getString("betterBeds.moreNeeded")
                         .replaceAll("%sleeping%", String.valueOf(sleepingPlayers))
                         .replaceAll("%online%", String.valueOf(Bukkit.getOnlinePlayers().size()))
                         .replaceAll("%sleepingPercentage%", String.valueOf(sleepingPlayersPercentage))
-                        .replaceAll("%percentageNeeded%", String.valueOf(preferences.getFileConfiguration().getInt("preferences.betterBeds.percentageNeeded")))));
+                        .replaceAll("%percentageNeeded%", String.valueOf(preferences.getInt("preferences.betterBeds.percentageNeeded")))));
+                event.setCancelled(true);
             }
         }
     }
