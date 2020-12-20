@@ -31,17 +31,17 @@ public class BedEvent implements Listener {
         if (!MathUtils.isBedReachable(player, event.getBed())) {
             if (!messages.getFileConfiguration().getString("betterBeds.failureFarAway").isEmpty()) {
                 player.sendMessage(StringUtils.coloredMessage(messages.getFileConfiguration().getString("betterBeds.failureFarAway")));
-                return;
             }
+            event.setCancelled(true);
             return;
         }
 
         // Checks if if's the right time or is thundering.
-        if (!(world.getTime() > 12541 && world.getTime() < 23458) || world.isThundering()) {
+        if (!((world.getTime() > 12541 && world.getTime() < 23458) || world.isThundering())) {
             if (!messages.getFileConfiguration().getString("betterBeds.failureWrongTime").isEmpty()) {
                 player.sendMessage(StringUtils.coloredMessage(messages.getFileConfiguration().getString("betterBeds.failureWrongTime")));
-                return;
             }
+            event.setCancelled(true);
             return;
         }
 
@@ -69,8 +69,6 @@ public class BedEvent implements Listener {
         }
 
         int sleepingPlayersPercentage = Math.round((float) sleepingPlayers / (float) Bukkit.getOnlinePlayers().size() * 100);
-
-        player.sendMessage(sleepingPlayers + " de " + Bukkit.getOnlinePlayers().size() + " = " + sleepingPlayersPercentage);
 
         if (sleepingPlayersPercentage >= preferences.getFileConfiguration().getInt("preferences.betterBeds.percentageNeeded")) {
             world.setTime(0);

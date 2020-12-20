@@ -7,4 +7,4 @@ description: A simple plugin that modifies beds for multiplayer purposes.
 
 commands:
   bed:
-    aliases: [cama, dormir]
+    aliases: [cama, camas, dormir]
