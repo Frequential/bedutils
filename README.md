@@ -1,5 +1,6 @@
-# This project is outdated, poorly made and has huge room for improvement. Probably because it was one of my first projects.
-Feel free to clone it and improve it for practice, or use it. (It should still work)
+###### You stumbled upon one of my first projects
+# This project is abandoned, outdated, poorly made and has huge room for improvement.
+Feel free to clone it and improve it for practice, you could also use it as is. (It should still work)
 
 # BedUtils
 ### A simple light-weight plugin that modifies beds for a better multiplayer experience.
